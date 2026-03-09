@@ -126,6 +126,4 @@ Detailed engineering specifications are available in the **`docs/`** directory:
 
 ## License
 
-This project is licensed under the [**MIT License**](./LICENSE).
-
 Copyright (c) 2026 Mayank. All rights reserved.
