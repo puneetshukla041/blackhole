@@ -79,23 +79,6 @@ A high-level map of the project's hybrid architecture:
 - **wasm-pack** - For compiling Rust to WebAssembly.
 - **Modern Browser** - WebGPU support (Chrome 113+, Edge 113+) or WebGL 2.0.
 
-### Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/steeltroops-ai/blackhole-simulation.git
-
-# 2. Install frontend dependencies
-bun install
-
-# 3. Build the Physics Engine (WASM)
-# This will compile the Rust logic into the public directory
-bun run build:wasm
-
-# 4. Start the high-performance dev server
-bun run dev
-```
-
 Open `http://localhost:3000` to view the simulation.
 
 ---
@@ -116,14 +99,7 @@ Open `http://localhost:3000` to view the simulation.
 
 ## Documentation
 
-Detailed engineering specifications are available in the **`docs/`** directory:
-
-1. [**ARCHITECTURE.md**](./docs/ARCHITECTURE.md) - System design, pipeline diagrams, and file structure.
-2. [**PHYSICS.md**](./docs/PHYSICS.md) - Mathematical foundations (Kerr Metric, Doppler Shift).
-3. [**PERFORMANCE.md**](./docs/PERFORMANCE.md) - Optimization strategies (Uniform Batching, Texture LUTs).
 
 ---
 
-## License
 
-Copyright (c) 2026 Mayank. All rights reserved.
