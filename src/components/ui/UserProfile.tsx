@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Twitter, User, Globe } from "lucide-react";
+import { Github, User, Globe } from "lucide-react";
 
 export const UserProfile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="relative flex flex-col-reverse items-center gap-4 mb-5">
-      {/* Main Identity Toggle - High-End User Icon with thin stroke for 'Premium' feel */}
+      {/* Main Identity Toggle */}
       <div className="relative flex items-center justify-center">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -24,7 +24,7 @@ export const UserProfile = () => {
           />
         </button>
 
-        {/* Identity Label - Absolute Positioned to left */}
+        {/* Identity Label */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -35,11 +35,9 @@ export const UserProfile = () => {
               className="absolute right-[150%] whitespace-nowrap z-[60]"
             >
               <div className="relative liquid-glass bg-black/90 border border-white/10 px-4 py-0.5 rounded-full shadow-2xl overflow-hidden group">
-                {/* Glossy Overlay Highlight */}
                 <div className="absolute inset-0 liquid-glass-highlight pointer-events-none" />
-
                 <span className="relative z-10 text-[11px] text-white/90 font-medium tracking-wide">
-                  Built by <span className="font-bold text-white">Mayank</span>
+                  Built by <span className="font-bold text-white">Puneet</span>
                 </span>
               </div>
             </motion.div>
@@ -47,7 +45,7 @@ export const UserProfile = () => {
         </AnimatePresence>
       </div>
 
-      {/* Social Icons Stack - Directly above the User Icon */}
+      {/* Social Icons Stack */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -57,7 +55,7 @@ export const UserProfile = () => {
             className="flex flex-col items-center gap-5 z-50"
           >
             <a
-              href="https://github.com/steeltroops-ai/blackhole-simulation"
+              href="https://github.com/puneetshukla041"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white opacity-60 hover:opacity-100 transition-all transform hover:scale-125"
@@ -66,16 +64,7 @@ export const UserProfile = () => {
               <Github className="w-5 h-5 sm:w-6 h-6" />
             </a>
             <a
-              href="https://twitter.com/steeltroops_ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white opacity-60 hover:opacity-100 transition-all transform hover:scale-125"
-              title="Twitter"
-            >
-              <Twitter className="w-5 h-5 sm:w-6 h-6" />
-            </a>
-            <a
-              href="https://steeltroops.vercel.app/"
+              href="https://puneetportfolio.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white opacity-60 hover:opacity-100 transition-all transform hover:scale-125"
